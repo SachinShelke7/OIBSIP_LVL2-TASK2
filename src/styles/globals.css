@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main_bg {
+    @apply bg-[#191919];
+  }
+  span {
+    @apply text-orange-400;
+  }
+  .bg_card {
+    @apply w-[300px] h-[300px] flex flex-col space-y-2 overflow-hidden p-5 border rounded-md hover:bg-white hover:text-[#101010] transform transition-all duration-[1500ms] cursor-pointer hover:border-orange-500;
+  }
+  .heading_card {
+    @apply text-orange-500 text-xl pb-2 font-bold;
+  }
+}
