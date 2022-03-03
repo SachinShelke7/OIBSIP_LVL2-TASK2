@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { Element } from "react-scroll";
+import { torana, kondana } from "../../../";
 
 const Section2 = () => {
   return (
@@ -9,7 +11,9 @@ const Section2 = () => {
           Important events in Shri Shivaji Maharaj’s Life
         </h1>
         <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
-          <div>IMAGE</div>
+          <div className="w-1/2">
+            <Image src={torana} alt="torana" />
+          </div>
           <div className="w-1/2">
             <h3 className="text-2xl text-orange-500 font-medium">
               Conquest of Torana
@@ -30,7 +34,15 @@ const Section2 = () => {
         </div>
 
         <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
-          <div>IMAGE</div>
+          <div className="w-1/2">
+            <Image
+              src={kondana}
+              alt="kondana"
+              width={600}
+              height={300}
+              className="object-cover"
+            />
+          </div>
           <div className="w-1/2">
             <h3 className="text-xl text-orange-500 font-medium">
               Conquest of Kondana fort
@@ -38,6 +50,18 @@ const Section2 = () => {
             It was under the control of Nilkanth Rao. It was fought between
             Tanaji Malusare, a commander of Maratha ruler Shivaji and Udaybhan
             Rathod, fort keeper under Jai Singh I.
+          </div>
+        </div>
+
+        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
+          <div>IMAGE</div>
+          <div className="w-1/2">
+            <h3 className="text-xl text-orange-500 font-medium">
+              Alliance with Qutub Shahi rulers Golconda
+            </h3>
+            With the help of this alliance, he led the campaign into Bijapur
+            Karanataka (AD 1676-79) and conquered Gingee (Jingi), Vellore and
+            many forts in Karnataka.
           </div>
         </div>
 
@@ -54,18 +78,6 @@ const Section2 = () => {
             Dharmodharka’ (Protector of Hindu faith) of the newly formed state
             of Hindavi Swarajya. This coronation gives a legitimate right to
             collect land revenue and levy tax on the people.
-          </div>
-        </div>
-
-        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
-          <div>IMAGE</div>
-          <div className="w-1/2">
-            <h3 className="text-xl text-orange-500 font-medium">
-              Alliance with Qutub Shahi rulers Golconda
-            </h3>
-            With the help of this alliance, he led the campaign into Bijapur
-            Karanataka (AD 1676-79) and conquered Gingee (Jingi), Vellore and
-            many forts in Karnataka.
           </div>
         </div>
       </div>

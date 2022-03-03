@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { Element } from "react-scroll";
+import shivneri from "../../../assets/images/shivneri.jpg";
 
 const Section1 = () => {
   return (
@@ -21,6 +23,9 @@ const Section1 = () => {
 
         <div className="flex justify-between mx-20 py-20 items-center space-x-5 border-b">
           <div className="w-1/2">
+            <h1 className="text-2xl text-orange-500 font-medium">
+              Birth, Family, and Early Life
+            </h1>
             Born in Pune’s Shivneri Fort in 1630 on February 19, Shivaji was the
             son of Shahji Bhosle and Jija Bai. He was brought up at Poona under
             the supervision of his mother and Brahmin Dadaji Konda-dev who made
@@ -40,8 +45,14 @@ const Section1 = () => {
             the religious influ­ence of Guru Ramdas, which made him proud of his
             motherland.
           </div>
-          <div className="w-1/2 text-2xl text-orange-500 font-medium text-center">
-            Birth, Family, and Early Life
+          <div className="">
+            <Image
+              src={shivneri}
+              alt="shivneri"
+              width={600}
+              height={300}
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
