@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,7 @@
     @apply bg-[#191919];
   }
   span {
-    @apply text-orange-400;
+    @apply text-orange-500;
   }
   .bg_card {
     @apply w-[300px] h-[300px] flex flex-col space-y-2 overflow-hidden p-5 border rounded-md hover:bg-white hover:text-[#101010] transform transition-all duration-[1500ms] cursor-pointer hover:border-orange-500;
