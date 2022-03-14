@@ -2,16 +2,18 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ dark }) => {
   return (
-    <div className="flex justify-between items-center space-x-5 bg-[#101010] py-4 px-2 md:px-5 max-h-[60px] group text-white fixed top-0 w-full 2xl:container z-[99]">
-      <div className="h-[60px] absolute top-0 left-0 w-2 z-[1] bg-orange-500" />
-      <div className="h-[60px] absolute top-0 right-0 w-2 z-[1] bg-orange-500" />
-      <p className="text-orange-500 text-2xl font-medium z-[2]">
+    <div
+      className={`flex justify-between items-center space-x-5 py-4 px-2 md:px-5 max-h-[60px] fixed top-0 w-full 2xl:container z-[999] shadow-md ease-in-out duration-700 ${
+        dark ? "dark_nav shadow-[#202020]" : "light_nav shadow-gray-300"
+      }`}
+    >
+      <p className="text-orange-500 text-2xl font-medium">
         Shri Chatrapati Shivaji Raje
       </p>
 
-      <div className="flex space-x-5 px-5 z-[1] font-medium">
+      <div className="flex space-x-5 px-5 font-medium">
         <Link
           activeClass="active"
           to="biography"

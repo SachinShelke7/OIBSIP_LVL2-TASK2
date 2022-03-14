@@ -1,10 +1,10 @@
 import React from "react";
 import { Navbar } from ".";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, dark }) => {
   return (
     <div>
-      <Navbar />
+      <Navbar dark={dark} />
       {children}
     </div>
   );

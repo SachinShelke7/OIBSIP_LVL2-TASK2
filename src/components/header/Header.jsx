@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { b1 } from "../..";
+// import { b1 } from "../..";
+import b1 from "../../assets/images/b1.png";
 
 const Header = () => {
   return (
     <div>
-      <Image src={b1} alt="banner1" />
-      <div className="w-full 2xl:container h-52 bg-gradient-to-b from-[#101010] absolute top-[60px] z-10" />
+      <img src="./images/b1.png" alt="banner1" className="w-full" />
     </div>
   );
 };

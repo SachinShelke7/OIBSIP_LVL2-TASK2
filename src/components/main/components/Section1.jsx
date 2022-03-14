@@ -7,11 +7,11 @@ const Section1 = () => {
   return (
     <Element name="biography">
       <div id="biography">
-        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
-          <div className="w-1/2 text-2xl text-orange-500 font-medium text-center">
+        <div className="flex flex-col lg:flex-row justify-between mx-20 items-center space-x-5 border-b border-gray-400 py-20">
+          <div className="lg:w-1/2 text-2xl text-orange-500 font-medium text-center">
             Biography
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             Chhatrapati Shivaji Maharaj was brave and had an immaculate
             personality in Indian history. Shivaji Maharaj was the warrior king
             and famous for his bravery, tactics and administrative skills. He
@@ -21,8 +21,8 @@ const Section1 = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mx-20 py-20 items-center space-x-5 border-b">
-          <div className="w-1/2">
+        <div className="flex flex-col-reverse lg:flex-row justify-between mx-5 px-5 lg:mx-20 lg:py-20 items-center lg:space-x-5 rounded-md">
+          <div className="lg:w-1/2">
             <h1 className="text-2xl text-orange-500 font-medium">
               Birth, Family, and Early Life
             </h1>
@@ -51,7 +51,7 @@ const Section1 = () => {
               alt="shivneri"
               width={600}
               height={300}
-              className="object-cover"
+              className="object-cover overflow-hidden rounded-t-md lg:rounded-md"
             />
           </div>
         </div>

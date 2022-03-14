@@ -6,7 +6,7 @@ import Section4 from "./components/Section4";
 
 const Main = () => {
   return (
-    <div className="text-white">
+    <div>
       <Section1 />
       <Section2 />
       <Section3 />

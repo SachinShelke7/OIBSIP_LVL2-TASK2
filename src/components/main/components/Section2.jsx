@@ -10,11 +10,11 @@ const Section2 = () => {
         <h1 className="text-center font-bold text-2xl mt-10">
           Important events in Shri Shivaji Maharaj’s Life
         </h1>
-        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row justify-between mx-20 items-center space-x-5 border-b border-gray-400 py-20">
+          <div className="lg:w-1/2">
             <Image src={torana} alt="torana" />
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <h3 className="text-2xl text-orange-500 font-medium">
               Conquest of Torana
             </h3>
@@ -33,8 +33,8 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row justify-between mx-20 items-center space-x-5 border-b border-gray-400 py-20">
+          <div className="lg:w-1/2">
             <Image
               src={kondana}
               alt="kondana"
@@ -43,7 +43,7 @@ const Section2 = () => {
               className="object-cover"
             />
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <h3 className="text-xl text-orange-500 font-medium">
               Conquest of Kondana fort
             </h3>
@@ -53,9 +53,9 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
+        <div className="flex flex-col lg:flex-row justify-between mx-20 items-center space-x-5 border-b border-gray-400 py-20">
           <div>IMAGE</div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <h3 className="text-xl text-orange-500 font-medium">
               Alliance with Qutub Shahi rulers Golconda
             </h3>
@@ -65,9 +65,9 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mx-20 items-center space-x-5 border-b py-20">
+        <div className="flex flex-col lg:flex-row justify-between mx-20 items-center space-x-5 border-b border-gray-400 py-20">
           <div>IMAGE</div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <h3 className="text-xl text-orange-500 font-medium">
               Coronation of Shivaji
             </h3>
